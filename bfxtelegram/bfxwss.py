@@ -8,12 +8,13 @@ import threading
 from bitfinex import WssClient
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.DEBUG)
+                    level=logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 
 
 class Bfxwss(WssClient):
     def __init__(self, send_to_users, key="", secret=""):
+
         self.msg_type_func = {
             'bu': self._send_bu_msg,
             'ps': self._send_ps_msg,
@@ -101,6 +102,7 @@ class Bfxwss(WssClient):
             LOGGER.info(f"_system_handler(): Distributing {data} to _info_handler..")
             self._info_handler(data)
         else:
+
             LOGGER.error("Unhandled event: %s, data: %s", event, data)
 
     def _info_handler(self, data):

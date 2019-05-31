@@ -33,7 +33,7 @@ import logging
 from decimal import Decimal
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.DEBUG)
+                    level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 
 REST_TYPES = {

@@ -8,6 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.python-version
+venv/
+btfxtelegram.egg-info/
 build/
 develop-eggs/
 dist/
