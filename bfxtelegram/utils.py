@@ -101,6 +101,14 @@ CMDHELP = {
         "example :\n/graph \n/graph iotusd"
         "<pre>"
     ),
+    "ticker": (
+        "<pre>"
+        "This the ticker of the selected pair"
+        "Please give a valid trading pair for which  you want the ticker or set a default one "
+        "using :\n/set defaultpair iotusd\n"
+        "example :\n/graph \n/graph iotusd"
+        "<pre>"
+    ),
     "getbalance": (
         "<pre>"
         "getbalance will return a list of balances for the currencies you set using /set\n"
